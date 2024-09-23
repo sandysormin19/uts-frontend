@@ -7,21 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <!-- Header Section -->
     <header>
         <nav class="navbar">
             <div class="logo">Fit&Thrive</div>
             <ul class="nav-links">
-                <li><a href="#">Health Conditions</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Plan</a></li>
-                <li><a href="#">Connect</a></li>
+                <li>
+                    <a href="#">Health Conditions</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Diabetes</a></li>
+                        <li><a href="#">Heart Health</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Discover</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Plan</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Meal Plans</a></li>
+                        <li><a href="#">Workout Plans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Connect</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </li>
             </ul>
             <button class="subscribe-btn">SUBSCRIBE</button>
-            <input type="text" class="search-bar" placeholder="Search">
+            <div class="search-container">
+                <button class="search-icon" onclick="toggleSearch()">🔍</button>
+                <input type="text" class="search-bar" placeholder="Search" id="search-bar" style="display: none;">
+            </div>
         </nav>
     </header>
-
+    
     <!-- Explore Section -->
     <section class="explore">
         <div class="explore-item">
@@ -45,5 +73,6 @@
             <p>Product Reviews</p>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
